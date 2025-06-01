@@ -1,12 +1,12 @@
 services:
 
-    links.softwareshinobi.digital:
+    links.softwareshinobi.come:
 
-        container_name: links.softwareshinobi.digital
+        container_name: links.softwareshinobi.com
 
-        image: softwareshinobi/software-shinobi-links-web
+        image: softwareshinobi/links.softwareshinobi.com
 
-        build: 
+        build:
 
             context: .
 
@@ -14,5 +14,4 @@ services:
 
         ports:
 
-            - 8888:80
-
+            - 8000:80
