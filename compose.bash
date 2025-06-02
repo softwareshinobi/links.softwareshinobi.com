@@ -2,20 +2,18 @@
 
 ##
 
-set -e
+reset;
 
-set -x
-
-##
-
-reset
-
-clear
+clear;
 
 ##
 
-docker-compose pull
+set -e;
 
-docker-compose down --remove-orphans
+set -x;
 
-docker-compose up --build
+##
+
+docker compose down --remove-orphans
+
+docker compose up --build -d
