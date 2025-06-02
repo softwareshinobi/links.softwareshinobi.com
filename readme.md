@@ -21,7 +21,7 @@ Here's a collection of my key online destinations:
 * **⚙️ Gitea (Self-Hosted Git):** [code.softwareshinobi.com](https://code.softwareshinobi.com)
 * **🔗 LinkedIn:** [Connect with me on LinkedIn](https://linkedin.com/in/softwareshinobi)
 * **👍 Facebook Page:** [Follow @softwareshinobi](https://www.facebook.com/softwareshinobi)
-* **🤝 1-1 Coaching:** [Book a coaching session](https://calendly.com/software_shinobi)
+* **🤝 1-1 Coaching:** [1-1 dev coaching](https://softwareshinobi.com/coaching)
 
 ## 🛠️ Tech Stack
 
