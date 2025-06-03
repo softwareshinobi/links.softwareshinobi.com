@@ -40,11 +40,16 @@ body {
     line-height: 1.25;
     display: block;
     font-family: var(--font);
-    width: 25%;
+
     text-align: center;
     text-decoration: none;
 }
 
+.trash {
+
+
+    width: 25%;
+}
 #links {
     max-width: 675px;
     width: auto;
