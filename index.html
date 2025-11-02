@@ -1,129 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>Links / Software Shinobi</title>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Shinobi - Job Search Portal</title>
+    <!-- Load Font Inter via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Load Bootstrap 5 CSS (Base) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Load Bootswatch Pulse Theme (Dark & Modern) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/pulse/bootstrap.min.css">
+    <!-- Load Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
-    <link rel="stylesheet" href="css/starfield.css">
-
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.allmylinks.com/prod/User/photo/l/U/t/sCUgUDbSvbSWlRpakzRe3K8ridPWbym-.jpg">
-
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f1a; /* Dark background from Pulse theme */
+            min-height: 100vh;
+        }
+        .header-section {
+            padding: 3rem 0;
+            background-color: #1a1e30; /* Slightly lighter dark background for contrast */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            border-bottom: 3px solid #6610f2; /* Pulse primary color */
+        }
+        .link-card {
+            border: 1px solid rgba(102, 16, 242, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            background-color: #141824; /* Card background */
+            border-radius: 0.75rem;
+        }
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(102, 16, 242, 0.5), 0 0 5px rgba(255, 255, 255, 0.1);
+        }
+        .list-group-item {
+            background-color: transparent !important;
+            border-color: rgba(255, 255, 255, 0.05) !important;
+            color: #ffffff;
+            transition: background-color 0.2s;
+            border-radius: 0.5rem; /* Soften edges of list items */
+            padding: 0.75rem 1.25rem;
+        }
+        .list-group-item:hover {
+            background-color: rgba(102, 16, 242, 0.15) !important; /* Primary hover effect */
+        }
+        .category-title {
+            color: #6610f2; /* Pulse primary color */
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .list-icon {
+            color: #6610f2;
+            width: 1.5rem;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
 
-<section class="animated-background">
-    <div id="stars1"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-</section>
+    <!-- Header Section -->
+    <header class="header-section text-center text-white">
+        <div class="container">
 
-<br />
-
-<div style="display:hidden"> <a id="profilePicture" href="#">
-        <img src="https://cdn.allmylinks.com/prod/User/photo/l/U/t/sCUgUDbSvbSWlRpakzRe3K8ridPWbym-.jpg" alt="Software Shinobi">
-    </a>
-    <div class="overlay" id="popup">
-        <div class="popup">
-            <div class="popup-photo">
-                <img src="https://cdn.allmylinks.com/prod/User/photo/l/U/t/sCUgUDbSvbSWlRpakzRe3K8ridPWbym-.jpg" alt="software shinobi">
-            </div>
+            <h1 class="display-5 fw-bold">Troy Burney</h1>
+            <p class="lead mb-0 text-secondary">Senior SE (15+ yrs). R&D to Operational Reality. Full-Stack Prototyping & CI/CD Delivery.</p>
         </div>
-    </div>
+    </header>
 
-<br />
+    <!-- Main Content Grid -->
+    <main class="container py-5">
+        <div id="links-container" class="row g-4 justify-content-center">
+            <!-- Content populated by jQuery -->
+        </div>
+    </main>
 
-<center>
-    
-    <div id="userName">
+    <!-- Load jQuery (as requested) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Load Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        I help experienced Java developers upskill in Git, Docker, Linux, CI/CD, and AWS for smooth, automated builds and deployments.
-    
-    </div>
+    <script>
+        $(document).ready(function() {
+            // Data structure containing all links, grouped by category.
+            // Icons are Font Awesome classes (fa-solid fa-...).
+            const linkData = {
+                "Digital Presence": [
+                    { title: "Official Website", url: "https://softwareshinobi.com", icon: "globe" },
+                    { title: "LinkedIn Profile", url: "https://linkedin.com/in/softwareshinobi", icon: "linkedin" },
+                    { title: "Resume (PDF)", url: "https://links.softwareshinobi.com/troy-burney-resume.pdf", icon: "file-pdf" },
+                ],
+                "Code Repositories & Packages": [
+                    { title: "GitHub", url: "https://github.com/softwareshinobi", icon: "github" },
+                    { title: "Gitea Instance", url: "https://code.softwareshinobi.com", icon: "code-branch" },
+                    { title: "Docker Hub", url: "https://hub.docker.com/u/softwareshinobi", icon: "docker" }
+                ],
+                "Contact": [
+                    { title: "Email Me", url: "mailto:troy.burney@gmail.com", icon: "envelope" }
+                ],
+                "Projects Showcase": [
+                    { title: "Napkin Exchange", url: "https://napkinexchange.online", icon: "lightbulb" },
+                    { title: "Project Chimba", url: "https://projectchimba.online", icon: "ghost" },
+                    { title: "Casino Project", url: "https://casino.softwareshinobi.com", icon: "gem" },
+                    { title: "Aria OS", url: "https://ariaos.online", icon: "desktop" },
+                ],
+                "Developer Utilities": [
+                    { title: "General Tools", url: "https://tools.softwareshinobi.com", icon: "wrench" },
+                    { title: "Clocks", url: "https://clocks.softwareshinobi.com", icon: "clock" },
+                    { title: "What is my IP", url: "https://whatismyip.softwareshinobi.com", icon: "network-wired" }
+                ]
+            };
 
-</center>
+            const container = $('#links-container');
 
-<br />
+            // Iterate through categories and links to generate HTML
+            $.each(linkData, function(category, links) {
+                // Create a column for each card (full width on mobile, half width on tablet/desktop)
+                const cardCol = $('<div>').addClass('col-12 col-md-6 col-lg-4');
 
-</div>
+                // Create the card element
+                const card = $('<div>').addClass('card link-card h-100');
 
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://softwareshinobi.com">
-        <i class="fas fa-globe"> &nbsp;</i>
-        Official Website
-    </a>
-</div>
+                // Card body content
+                const cardBody = $('<div>').addClass('card-body p-4');
+                cardBody.append($('<h5>').addClass('category-title').text(category));
 
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/softwareshinobi">
-        <i class="fab fa-linkedin"> &nbsp;</i>
-        LinkedIn
-    </a>
-</div>
+                // Create a list group for the links
+                const linkList = $('<ul>').addClass('list-group list-group-flush');
 
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@softwareshinobi">
-        <i class="fab fa-youtube"> &nbsp;</i>
-        YouTube
-    </a>
-</div>
+                // Add each link to the list group
+                $.each(links, function(index, link) {
+                    const listItem = $('<li>')
+                        .addClass('list-group-item d-flex justify-content-between align-items-center');
 
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/softwareshinobi">
-        <i class="fab fa-facebook"> &nbsp;</i>
-        Facebook
-    </a>
-</div>
+                    const linkAnchor = $('<a>')
+                        .attr('href', link.url)
+                        .attr('target', '_blank')
+                        .addClass('d-flex align-items-center text-decoration-none text-white')
+                        .html(`
+                            <i class="fa-solid fa-${link.icon} list-icon me-3"></i>
+                            <span class="fw-bold">${link.title}</span>
+                        `);
 
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/softwareshinobi?tab=repositories">
-        <i class="fab fa-github"> &nbsp;</i>
-        GitHub
-    </a>
-</div>
+                    const externalIcon = $('<span>').addClass('text-muted ms-auto').html('<i class="fa-solid fa-arrow-up-right-from-square small"></i>');
 
-<div style="display:none" "id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://code.softwareshinobi.com">
-        <i class="fas fa-code-branch"> &nbsp;</i>
-        Gitea
-    </a>
-</div>
+                    listItem.append(linkAnchor, externalIcon);
+                    linkList.append(listItem);
+                });
 
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/e/2PACX-1vTieOSduyVzdW--buzpibO3ikij9LEGCxmiwfiVGPZ2--LRV5hvLh3wwWKh7WgNpUmu0M5SobcMqr48/pub">
-        <i class="fas fa-file-alt"> &nbsp;</i>
-        Resume
-    </a>
-</div>
-
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://softwareshinobi.com/coaching">
-        <i class="fas fa-calendar-check"> &nbsp;</i>
-        1-1 Coaching
-    </a>
-</div>
-
-<div id="links">
-    <a class="link" target="_blank" rel="noopener noreferrer" href="https://newsletter.softwareshinobi.com">
-        <i class="fas fa-calendar-check"> &nbsp;</i>
-        My Newsletter
-    </a>
-</div>
-
-
-
-
-<div id="hashtag">
-I help experienced Java developers upskill in Git, Docker, Linux, CI/CD, and AWS for smooth, automated builds and deployments.
-</div>
+                cardBody.append(linkList);
+                card.append(cardBody);
+                cardCol.append(card);
+                container.append(cardCol);
+            });
+        });
+    </script>
 
 </body>
-
 </html>
