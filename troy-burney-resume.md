@@ -17,7 +17,7 @@ Cloud Infrastructure & DevOps • Innovation & Problem Solving • Backend & API
 | Programming & Scripting |  | RESTful APIs, Java, Maven, Gradle, Python, JavaScript, React, HTML5, Bootstrap, jQuery, SQL  |
 | :---- | :---- | :---- |
 | **Frameworks & Databases** |  | Spring Boot, Spring MVC, Django, Flask, MySQL, Oracle, Snowflake, PostgreSQL  |
-| **DevOps & Delivery** |  | GitHub, GitLab, Gitea, Jenkins, Python, Groovy, Selenium, Ansible, Nexus OSS 2 & 3, Bash |
+| **DevOps & Delivery** |  | GitHub, GitHub Actions, GitLab, Gitea, Jenkins, Python, Groovy, Selenium, Ansible, Sonatype Nexus OSS, Bash, YAML |
 | **Infrastructure & Operations** |  | Linux (Ubuntu, RHEL), Windows Server, Okta (SSO, Lifecycle Management, Universal Directory), Networking (Firewalls, DNS, VPN), Jira, ServiceNow |
 | **Cloud & Containerization** |  | AWS (EC2, VPC, Route 53, RDS, CloudWatch), GCP (Compute Engine, VPC, Cloud DNS, Persistent Disk, Firewall Rules), Digital Ocean, Docker, Compose, DockerHub |
 
@@ -27,14 +27,13 @@ Cloud Infrastructure & DevOps • Innovation & Problem Solving • Backend & API
 
 #### ***EXPERIENCE***
 
-**Valorant Digital** / AI Platform Engineer / 2020 \- Current
+**Valorant Digital** / Full Stack Software Engineer / 2020 \- Current
 
-*Engineered a full-stack AI platform (Aria OS) that scales marketing agency content output 5-10x with total brand consistency.*
+*Engineered core Java API for Aria OS "Mini-Me" system, enforcing brand voice fidelity and reducing content-to-publish cycle by 80%.*
 
-* Architected a "Mini-Me" personalization system to guarantee a flawless, on-brand voice from a brand's unique DNA.  
-* Designed a central control panel for non-technical users to manage and configure brand-specific inputs for the AI engine.  
-* Developed and operated a secure public-facing cloud infrastructure hosting a Dockerized AI platform with 99.9% uptime.  
-* Engineered Java APIs to power sophisticated prompt-generation engines for the Gemini AI, guaranteeing high-quality output.
+* Developed multi-tenant UI exposing gateway for experts to curate Brand Voice data and execute content generation cycles.  
+* Created backend logic to dynamically pre-load brands transcripts and core Knowledge frameworks into the prompt payloads.  
+* Architected Java APIs to orchestrate complex LLM prompt injection, wrapping Gemini AI for proprietary, brand-aligned output.
 
 **Booz Allen Hamilton** / Cloud Integration Engineer (USPS, IRS) / 2019 \- 2020
 
@@ -93,4 +92,4 @@ Cloud Infrastructure & DevOps • Innovation & Problem Solving • Backend & API
 
 ***CODE & CREATIONS***
 
-Talking is easy, and I prefer to show, not tell. Here are the artifacts: APIs, web apps, tools, experiments, and other situations I've built over the years. Head over to my links portal: **https://links.softwareshinobi.com**
+See the operational reality. Review artifacts from my rapid prototyping experience and personal full-stack systems on GitHub: **github.com/softwareshinobi**
