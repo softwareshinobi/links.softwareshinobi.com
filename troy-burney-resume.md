@@ -17,7 +17,7 @@ Cloud Infrastructure & DevOps • Innovation & Problem Solving • Backend & API
 | Programming & Scripting |  | RESTful APIs, Java, Maven, Gradle, Python, JavaScript, React, HTML5, Bootstrap, jQuery, SQL  |
 | :---- | :---- | :---- |
 | **Frameworks & Databases** |  | Spring Boot, Spring MVC, Django, Flask, MySQL, Oracle, Snowflake, PostgreSQL  |
-| **DevOps & Delivery** |  | GitHub, GitHub Actions, GitLab, Gitea, Jenkins, Python, Groovy, Selenium, Ansible, Sonatype Nexus OSS, Bash, YAML |
+| **DevOps & Delivery** |  | GitHub, GitHub Actions, GitLab, Gitea, Jenkins, Python, Groovy, Selenium, Ansible, Sonatype Nexus OSS, Bash, JSON, YAML |
 | **Infrastructure & Operations** |  | Linux (Ubuntu, RHEL), Windows Server, Okta (SSO, Lifecycle Management, Universal Directory), Networking (Firewalls, DNS, VPN), Jira, ServiceNow |
 | **Cloud & Containerization** |  | AWS (EC2, VPC, Route 53, RDS, CloudWatch), GCP (Compute Engine, VPC, Cloud DNS, Persistent Disk, Firewall Rules), Digital Ocean, Docker, Compose, DockerHub |
 
@@ -29,11 +29,11 @@ Cloud Infrastructure & DevOps • Innovation & Problem Solving • Backend & API
 
 **Valorant Digital** / Full Stack Software Engineer / 2020 \- Current
 
-*Engineered core Java API for Aria OS "Mini-Me" system enforcing brand voice fidelity and reducing content-to-publish cycle by 80%.*
+*Engineered Java API for the Aria OS "Mini-Me" system enforcing brand voice fidelity and reducing content-to-publish time by 80%.*
 
-* Developed multi-tenant UI exposing gateway for experts to curate Brand Voice data and execute content generation cycles.  
-* Created backend logic to dynamically pre-load brands transcripts and core Knowledge frameworks into the prompt payloads.  
-* Architected Java APIs to orchestrate complex LLM prompt injection, wrapping Gemini AI for proprietary, brand-aligned output.
+* Created backend logic to dynamically load and inject brand transcripts and core Knowledge frameworks into prompt payloads.  
+* Architected Spring services to orchestrate complex LLM prompt building to integrate Gemini AI for brand-aligned outputs.  
+* Developed multi-tenant UI exposing gateway for experts to curate Brand Voice data and execute content generation cycles.
 
 **Booz Allen Hamilton** / Cloud Integration Engineer (USPS, IRS) / 2019 \- 2020
 
