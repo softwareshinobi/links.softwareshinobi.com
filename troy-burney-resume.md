@@ -29,7 +29,7 @@ Cloud Infrastructure & DevOps • Innovation & Problem Solving • Backend & API
 
 **Valorant Digital** / Full Stack Software Engineer / 2020 \- Current
 
-*Engineered core Java API for Aria OS "Mini-Me" system, enforcing brand voice fidelity and reducing content-to-publish cycle by 80%.*
+*Engineered core Java API for Aria OS "Mini-Me" system enforcing brand voice fidelity and reducing content-to-publish cycle by 80%.*
 
 * Developed multi-tenant UI exposing gateway for experts to curate Brand Voice data and execute content generation cycles.  
 * Created backend logic to dynamically pre-load brands transcripts and core Knowledge frameworks into the prompt payloads.  
